@@ -1,0 +1,20 @@
+{
+    "name": "55-grupe-js-intro",
+    "version": "1.0.0",
+    "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
+    "main": "index.js",
+    "scripts": {
+        "homework": "node --watch ./js/7-homework.js",
+        "namu": "node --watch ./js/6-namu.js",
+        "if": "node --watch ./js/5-if.js",
+        "boolean": "node --watch ./js/4-boolean.js",
+        "function": "node --watch ./js/3-function.js",
+        "string": "node --watch ./js/2-string.js",
+        "number": "node --watch ./js/1-number.js",
+        "js": "node ./index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "https://github.com/FaustasSlekonis",
+    "license": "MIT"
+}
