@@ -54,3 +54,12 @@ if(temp2 < 0){
     console.log('Karsta');
 }
 
+console.clear();
+
+const clieantValue = '4';
+
+if (4 === clieantValue){
+    console.log('tenkina');
+} else {
+    console.log('ne-tenkina');
+}

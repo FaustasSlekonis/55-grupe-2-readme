@@ -36,7 +36,7 @@ _**Labas rytas, Lietuva!**_
 
 ## Nuorodos
 
-Github: [mano profilis](https://github.com/belauzas).
+Github: [mano profilis](https://github.com/FaustasSlekonis).
 
 ## Nuotraukos
 
