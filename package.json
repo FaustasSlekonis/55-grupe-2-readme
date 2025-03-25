@@ -4,6 +4,9 @@
     "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
     "main": "index.js",
     "scripts": {
+        "marks-average": "node --watch ./task/marks-average.js",
+        "typeof": "node --watch ./js/9-typeof.js",
+        "multiply": "node --watch ./task/multiply.js",
         "text-size": "node --watch ./task/text-size.js",
         "adult": "node --watch ./task/adult.js",
         "array": "node --watch ./js/8-array.js",
