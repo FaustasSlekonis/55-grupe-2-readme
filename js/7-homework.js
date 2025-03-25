@@ -255,4 +255,30 @@ const skaiciai11 = [1,2,3];
  }
 console.log(addNum(skaiciai11));
 
+console.clear();
 
+//Funkcija pavadinimu “tusciaFunkcija”:
+
+function tusciaFunkcija() {
+    return false;
+  }
+  
+  console.log(tusciaFunkcija());
+
+console.clear();
+
+//Funkcija pavadinimu “daugyba”:
+
+function daugyba(a, b) {
+    const sandauga = a * b;
+    return sandauga;
+}
+
+
+const skaicius11 = 5;
+const skaicius12 = 3;
+const skaicius13 = 10;
+
+console.log(daugyba(skaicius11, skaicius12)); 
+console.log(daugyba(skaicius13, skaicius12)); 
+console.log(daugyba(skaicius11, skaicius13)); 

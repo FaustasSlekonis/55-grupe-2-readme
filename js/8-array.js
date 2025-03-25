@@ -95,7 +95,10 @@ k++;
 
 let i = 0;
 let sentence4 = 'Patiekalui reikes: ';
-sentence4 +- dictionary[i++] + ', ';
-sentence4 +- dictionary[i++] + ', ';
-sentence4 +- dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
 console.log(sentence4);
