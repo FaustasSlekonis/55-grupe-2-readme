@@ -282,3 +282,52 @@ const skaicius13 = 10;
 console.log(daugyba(skaicius11, skaicius12)); 
 console.log(daugyba(skaicius13, skaicius12)); 
 console.log(daugyba(skaicius11, skaicius13)); 
+
+// 1. Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+function sumInterval(start, end) {
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+console.log(sumInterval(0, 0)); // 0
+console.log(sumInterval(0, 4)); // 10
+console.log(sumInterval(0, 100)); // 5050
+console.log(sumInterval(574, 815)); // 168069
+console.log(sumInterval(-50, 50)); // 0
+console.log(sumInterval(-70, 30)); // -202
+
+// 2. Perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+function reverseString (text){
+    let result = '';
+    for(let i  = 0; i < text.length; i++){
+        result = text[i] + result;
+    }
+
+    return result;
+}
+
+console.log(reverseString('abc'));
+
+// 3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7:
+function countDivisibles(start, end, divisor) {
+    let count = 0;
+    for (let i = start; i <= end; i++) {
+        if (i % divisor === 0) {
+            count++;
+        }
+    }
+    return count;
+}
+
+function divisiblesReport(start, end) {
+    console.log(`Skaičių intervale tarp ${start} ir ${end}, besidalijančių be liekanos iš 3 yra ${countDivisibles(start, end, 3)} vienetai.`);
+    console.log(`Skaičių intervale tarp ${start} ir ${end}, besidalijančių be liekanos iš 5 yra ${countDivisibles(start, end, 5)} vienetai.`);
+    console.log(`Skaičių intervale tarp ${start} ir ${end}, besidalijančių be liekanos iš 7 yra ${countDivisibles(start, end, 7)} vienetai.`);
+}
+
+divisiblesReport(0, 11);
+divisiblesReport(8, 31);
+divisiblesReport(-18, 18);
