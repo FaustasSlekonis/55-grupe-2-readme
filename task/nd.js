@@ -15,9 +15,9 @@ console.log('Ar mergina eis i pasimatinma su vaikinu')
 
 const Grazus = true;
 const turtinas = true;
-const Smirdi = false
+const Nesiprausia = false
 
-console.log(Grazus && turtinas || Smirdi)
+console.log(Grazus && turtinas || Nesiprausia)
 console.clear();
 
 
