@@ -52,3 +52,18 @@ if(arYra3 === true){
 }
 return 
 
+console.clear();
+
+
+
+function textsize(sarasas){
+     if (textsize.length === 0){
+     return `sarasas tuscias`;
+     }
+}
+     if (textsize.length <= 10 ){
+          return `sarasas is mazai raidziu sudarytas is ${sarasas.length}` 
+     }
+
+console.log(textsize(''));
+console.log(textsize('sdasd'));
