@@ -109,4 +109,62 @@ for(let i = 0; i < sarasas.length; i++){
         console.log('------------------------------')
 
 
+        for(let i = 0; i < 5; i++){
+            console.log(i)
+        }
 
+
+
+        console.log('------------------------------')
+
+
+
+
+        for (let n = 0; n <= 10; n++){
+            console.log(n)
+        
+            for(let i = 0; i <= 10; i++){
+                console.log(`${n} * ${i} = ${n * i}`)
+            }
+        }
+
+
+        console.log('------------------------------')
+
+
+        const list = [1, 5 ,6 ,8, 7]
+        let sum2 = 6
+
+        for(let i = 0; i < list.length; i++){
+            
+           console.log(`${i} ---->${list[i]} `)
+           sum2 += list[i]
+        }
+
+        console.log(sum2)
+
+        console.log('------------------------------')
+
+
+        const names = ['arnas', 'petras', 'jonas', 'maryte']
+        let v = 0;
+
+        for(let i = 0; i < names.length; i++){
+            console.log(`${i} studento vardas yra ${names[i]}`)
+            
+        }
+
+
+        console.log('------------------------------')
+
+        
+        const names1 = ['arnas', 'petras', 'jonasjonaitis', 'maryte']
+        let b = 0;
+
+        for(let i = 0; i < names1.length; i++){
+            const names = names1[i]
+            console.log(`studento vardas yra "${names1[i]}" jis yra sudarytas is "${names.length}" sudarytas is raidziu`)
+            
+        }
+
+        console.log('------------------------------')
