@@ -203,3 +203,177 @@ for(let i = 0; i < sarasas.length; i++){
         console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8])); 
         console.log(didziausiasSkaiciusSarase("pomidoras"));
         console.log(didziausiasSkaiciusSarase([])); 
+
+
+
+
+        function isrinktiRaides(tekstas, zingsnis) {
+
+            if (typeof tekstas !== 'string') {
+                return "Pirmasis kintamasis yra netinkamo tipo.";
+            }
+
+            if (tekstas === "" || tekstas.length > 100) {
+                return "Pirmojo kintamojo reikšmė yra netinkamo dydžio.";
+            }
+        
+
+            if (typeof zingsnis !== 'number') {
+                return "Antrasis kintamasis yra netinkamo tipo.";
+            }
+        
+
+            if (zingsnis <= 0) {
+                return "Antrasis kintamasis turi būti didesnis už nulį.";
+            }
+        
+  
+            if (zingsnis > tekstas.length) {
+                return "Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.";
+            }
+        
+
+            let rezultatas = "";
+            for (let i = zingsnis - 1; i < tekstas.length; i += zingsnis) {
+                rezultatas += tekstas[i];
+            }
+        
+        
+            return rezultatas;
+        }
+
+        console.log(isrinktiRaides("abcdefg", 2)); 
+        console.log(isrinktiRaides("abcdefghijkl", 3)); 
+        console.log(isrinktiRaides("abc", 0)); 
+        console.log(isrinktiRaides("abc", 4));
+        console.log(isrinktiRaides(1561, 2)); 
+
+        console.clear();
+
+
+
+        function positiveSum(start, end) {
+            let sum = 0
+            for (let i = start; i <= end; i++){
+                sum += i;
+            }
+            return sum
+        }
+
+
+        const skaiciai11 = [1,2,];
+
+ function addNum (sk){
+    return (sk[0] + sk[1] + sk[2]);
+ }
+
+ function tellNum  (sk)
+ {
+    console.log(sk[0]);
+ }
+console.log(addNum(skaiciai11));
+console.clear();
+
+function positiveSum(sarasas5) {
+    let sum = 0;  
+
+    for (let i = 0; i < sarasas5.length; i++) {
+        if (sarasas5[i] > 0) {  
+            sum += sarasas5[i]; 
+        }
+    }
+
+    return sum; 
+}
+
+console.log(positiveSum([5, 2 ,6 ,9]))
+console.log(positiveSum([-5, 2 ,-6 ,9]))
+console.log(positiveSum([5, 12 ,-16 ,9]))
+console.log(positiveSum([5, 2 ,-6 ,-9]))
+
+
+
+function positiveSum(arr) {
+    let sum = 0;  
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {  
+            sum += arr[i]; 
+        }
+    }
+
+    return sum; 
+}
+
+console.log(positiveSum([5, 2 ,6 ,9]))
+console.log(positiveSum([-5, 2 ,-6 ,9]))
+console.log(positiveSum([5, 12 ,-16 ,9]))
+console.log(positiveSum([5, 2 ,-6 ,-9]))
+
+console.log('----------------------------------------')
+
+
+const target = 6;
+let current_count = 5;  
+let steps = 0;
+
+
+for (let i = current_count; i < target; i++) {
+    steps = steps + 1;
+}for (let i = target; i < current_count; i++) {
+    steps = steps + 1;
+}
+
+
+console.log(steps)
+
+
+console.log('---------------------------------------')
+//kiek bus skrebuciu jei yra 6 vietos ir idesime 5, 12 , 6
+
+
+function countToasts(current_count) {
+    const sixToast = 6;
+    let steps = 0;
+
+for (let i = current_count; i < sixToast; i++) {
+    steps = steps + 1;
+}for (let i = sixToast; i < current_count; i++) {
+    steps = steps + 1;
+}
+     return steps; 
+}
+
+console.log(countToasts(5));
+console.log(countToasts(12));
+console.log(countToasts(6)); 
+
+
+//    ReferenceError: sixToast is not defined
+ //   at Context.<anonymous> (test.js:26:10)
+//  at process.processImmediate (node:internal/timers:471:21)
+function countToasts(current_count) {
+    const sixToast = 6;
+    let steps = 0;
+
+for (let i = current_count; i < sixToast; i++) {
+    steps = steps + 1;
+}for (let i = sixToast; i < current_count; i++) {
+    steps = steps + 1;
+}
+     return steps; 
+}
+
+
+function sixToast(kiekis) {
+    const maxVietos = 6;
+    let a = 0;
+
+    if (kiekis < maxVietos) {
+        a = maxVietos - kiekis;
+    } else if (kiekis > maxVietos) {
+        a = kiekis - maxVietos; 
+    }
+
+    return a;
+}
