@@ -67,3 +67,5 @@ function textsize(sarasas){
 
 console.log(textsize(''));
 console.log(textsize('sdasd'));
+
+

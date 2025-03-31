@@ -168,3 +168,38 @@ for(let i = 0; i < sarasas.length; i++){
         }
 
         console.log('------------------------------')
+
+
+        function didziausiasSkaiciusSarase(sarasas) {
+            // Patikriname, ar perduotas kintamasis yra sąrašas
+            if (!Array.isArray(sarasas)) {
+                return "Pateikta netinkamo tipo reikšmė.";
+            }
+            
+            // Patikriname, ar sąrašas nėra tuščias
+            if (sarasas.length === 0) {
+                return "Pateiktas sąrašas negali būti tuščias.";
+            }
+        
+            // Pateikiame pradines reikšmes
+            let didziausias = sarasas[0]; 
+        
+            // Pereiname per visą sąrašą ir surandame didžiausią skaičių
+            for (let i = 1; i < sarasas.length; i++) {
+                if (sarasas[i] > didziausias) {
+                    didziausias = sarasas[i];
+                }
+            }
+        
+            // Gražiname didžiausią skaičių
+            return didziausias;
+        }
+        
+        // Testavimas
+        console.log(didziausiasSkaiciusSarase([1])); 
+        console.log(didziausiasSkaiciusSarase([1, 2, 3])); 
+        console.log(didziausiasSkaiciusSarase([-5, 78, 14, 0, 18]));
+        console.log(didziausiasSkaiciusSarase([69, 69, 69, 69, 66])); 
+        console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8])); 
+        console.log(didziausiasSkaiciusSarase("pomidoras"));
+        console.log(didziausiasSkaiciusSarase([])); 

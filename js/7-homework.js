@@ -331,3 +331,41 @@ function divisiblesReport(start, end) {
 divisiblesReport(0, 11);
 divisiblesReport(8, 31);
 divisiblesReport(-18, 18);
+
+console.log("-------------------------------")
+
+
+function biggestNumber(list) {
+    if (!Array.isArray(list)) {
+        return 'Duomenys turi buti sarase.';
+    }
+
+    if (list.length === 0) {
+        return 'Tusciame sarase didziausio skaiciaus rasti neimanoma.';
+    }
+
+    let biggest = -Infinity;
+
+    for (let i = 0; i < list.length; i++) {
+        if (typeof list[i] !== 'number' || !isFinite(list[i])) {
+            continue;
+        }
+
+        if (list[i] > biggest) {
+            biggest = list[i];
+        }
+    }
+
+    return biggest;
+}
+
+console.log(biggestNumber([1 ,2, 3, 4, 6,]), '----->', 6,);
+
+console.log(biggestNumber('labas'));
+console.log(biggestNumber([]), '----->', 0,);
+
+console.log(biggestNumber(['asd', 2, 3, 4,]), '----->', 4);
+
+
+console.log(biggestNumber([true, 2, 3, 4,]), '----->', 4);
+console.log(biggestNumber([ 2, 3, true,]), '----->', 4);

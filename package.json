@@ -4,6 +4,7 @@
     "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
     "main": "index.js",
     "scripts": {
+        "11-object": "node --watch ./js/11-object.js",
         "ndtestai": "node --watch ./task/ndtestai.js",
         "nd": "node --watch ./task/nd.js",
         "digit-count": "node --watch ./task/digit-count.js",
