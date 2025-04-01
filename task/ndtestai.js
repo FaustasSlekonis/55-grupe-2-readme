@@ -392,3 +392,52 @@ console.log("------------------------------------------")
 for(let i = 0; i <= 20; i += 2){
     console.log(i)
 }
+
+console.log("------------------------------------------")
+for(let i = 1; i <= 20; i += 2){
+    console.log(i)
+}
+
+
+
+console.log("------------------------------------------")
+for(let i = 1; i <= 10; i++){
+    console.log(`${i}^2 = ${i ** 2}`)
+}
+
+console.log("------------------------------------------")
+
+//6. Išspausdinkite pirmuosius 10 skaičių kubų (1^3, 2^3, 3^3 ir t. t.). 
+
+for(let i = 1; i <= 10; i++){
+    console.log(`${i}^3 = ${i ** 3}`)
+}
+
+//7. Atspausdinkite 7 daugybos lentelę (7 × 1, 7 × 2 ir t. t.). 
+console.log("------------------------------------------")
+
+for(let i = 1; i <= 10; i++){
+    console.log(`${i} x 7 = ${7 * i}`)
+}
+
+//8. Atspausdinkite nuo 1 iki 5 žvaigždučių (*) seriją (pvz., *, **, *** ir t. t.). 
+
+for(let i = 1; i <= 5; i++){
+    let zvaigzdes = '';
+    for  (let j = 1; j <= i; j++){
+    zvaigzdes += '*';
+     }
+     console.log(zvaigzdes)
+}
+console.log("------------------------------------------")
+
+for (i = 5; i >= 1; i--){
+    let zvaigzdes1 = '';
+    for (let j = 1; j <= i; j++){
+        zvaigzdes1 += "*";
+    }
+    console.log(zvaigzdes1)
+}
+
+
+
