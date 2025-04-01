@@ -440,4 +440,50 @@ for (i = 5; i >= 1; i--){
 }
 
 
+let sarasas12 = [1, 2, 3, 4, 5, 6];
+let yra3 = false;
+for(let i = 0; i < sarasas12.length; i++){
+    if (sarasas12[i] == 3){
+        yra3 = true
+    }
+}
+if(yra3 == true){
+    console.log('yra 3 sarase');
+}
+console.log("------------------------------------------")
+const array1 = [1, -2, 2, -4];
+let arYraTeig = false
 
+for(let i = 0; i < array1.length; i++){
+    if (array1[i] > 0){
+        arYraTeig = true
+    }
+}
+if(arYraTeig == true){
+    console.log('sarase yra teigemu');
+}
+console.log("------------------------------------------")
+
+const sarasas1 = [2, 4, 6];
+let visilyginiai1 = sarasas1.every(num => num % 2 === 0);
+if (visilyginiai1) {
+    console.log('Visi skaiciai lyginiai');
+} else {
+    console.log('Sarase yra nelyginiu skaiciu');
+}
+
+
+// const sarasas = [2, 4, 6]
+// let visilyginiai = true;
+
+// for(let i = 0; i < sarasas.length; i++){
+//     if (sarasas[i] %2 !== 0){
+//         visilyginiai = false;
+//         break;
+//     }
+// }
+//     if(visilyginiai){
+//         console.log('visi skaiciai liginiai')
+//     }else{
+//         console.log('visi skaicia nera liginiai')
+//     }
