@@ -316,7 +316,7 @@ for (let i = 1; i <= 10; i++) {
  for (let i = 1; i <= 10; i++) {
      console.log(i * i);
  }
- //arba
+ console.log('-----------arba----------')
  for(let i = 1; i <= 10; i++){
      console.log(`${i}^2 = ${i ** 2}`)
  }
@@ -326,9 +326,9 @@ for (let i = 1; i <= 10; i++) {
  console.log('------------------------------');
 //6. Išspausdinkite pirmuosius 10 skaičių kubų (1^3, 2^3, 3^3 ir t. t.). 
  for (let i = 1; i <= 10; i++) {
-     console.log(i * i * i);
+     console.log(`${i}^3 = ${i * i * i}`);
  }
-//arba
+console.log('-----------arba----------')
  for(let i = 1; i <= 10; i++){
      console.log(`${i}^3 = ${i ** 3}`)
  }
@@ -342,44 +342,38 @@ for (let i = 1; i <= 10; i++) {
 
 
  console.log('------------------------------');
- //8. Atspausdinkite nuo 1 iki 5 žvaigždučių (*) seriją (pvz., *, **, *** ir t. t.). 
- for (i = 5; i >= 1; i--){
-     let zvaigzdes1 = '';
-     for (let j = 1; j <= i; j++){
-         zvaigzdes1 += "*";
-     }
-     console.log(zvaigzdes1)
- }
- 
- //arba
 
+//8. Atspausdinkite nuo 1 iki 5 žvaigždučių (*) seriją (pvz., *, **, *** ir t. t.). 
 
+ for (let i = 1; i <= 5; i++) {
+    console.log('*'.repeat(i));
+}
+console.log('-----------arba----------')
 for(let i = 1; i <= 5; i++){
-    let zvaigzdes = '';
-    for  (let j = 1; j <= i; j++){
-    zvaigzdes += '*';
-     }
-     console.log(zvaigzdes)
+   let zvaigzdes = '';
+   for  (let j = 1; j <= i; j++){
+   zvaigzdes += '*';
+    }
+    console.log(zvaigzdes)
+}
+console.log('------------------------------');
+ //9. Atspausdinkite atvirkštinę eigą su žvaigždutėmis 5 eilutėse (pvz., *****, ****, *** ir t. t.). 
+ for (let i = 5; i >= 1; i--) {
+    console.log('*'.repeat(i));
+}
+console.log('-----------arba----------')
+
+
+ for (i = 5; i >= 1; i--){
+    let zvaigzdes1 = '';
+    for (let j = 1; j <= i; j++){
+        zvaigzdes1 += "*";
+    }
+    console.log(zvaigzdes1)
 }
 
 
- console.log('------------------------------');
-//9. Atspausdinkite atvirkštinę eigą su žvaigždutėmis 5 eilutėse (pvz., *****, ****, *** ir t. t.).
 
-
- for (let i = 5; i >= 1; i--) {
-     console.log('*'.repeat(i));
- }
-//arba
- for (i = 5; i >= 1; i--){
-     let zvaigzdes1 = '';
-     for (let j = 1; j <= i; j++){
-         zvaigzdes1 += "*";
-     }
-     console.log(zvaigzdes1)
- }
- 
- 
 
  console.log('------------------------------');
  //10. Spausdinti skaičius nuo 1 iki 50, kurie dalijasi iš 3. 
