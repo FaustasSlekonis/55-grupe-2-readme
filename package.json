@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
     "main": "index.js",
-    "scripts": {
+    "scripts": {   
+        "codewar1": "node --watch ./codewar/codewar1.js",
         "funkcijosfor": "node --watch ./task/funkcijosfor.js",
         "13-method-string": "node --watch ./js/13-method-string.js",
         "12-math": "node --watch ./js/12-math.js",
