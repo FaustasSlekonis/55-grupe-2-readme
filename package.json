@@ -4,6 +4,7 @@
     "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
     "main": "index.js",
     "scripts": {
+        "12-math": "node --watch ./js/12-math.js",
         "11-object": "node --watch ./js/11-object.js",
         "ndtestai": "node --watch ./task/ndtestai.js",
         "nd": "node --watch ./task/nd.js",
@@ -19,7 +20,7 @@
         "text-size": "node --watch ./task/text-size.js",
         "adult": "node --watch ./task/adult.js",
         "array": "node --watch ./js/8-array.js",
-        "homework": "node --watch ./js/7-homework.js",
+        "homework": "node --watch ./task/7-homework.js",
         "namu": "node --watch ./js/6-namu.js",
         "if": "node --watch ./js/5-if.js",
         "boolean": "node --watch ./js/4-boolean.js",

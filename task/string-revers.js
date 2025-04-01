@@ -1,22 +1,22 @@
-// function stringReverse(text) {
-//     let result = '';
+ /*function stringReverse(text) {
+     let result = '';
 
-//     for (let i = text.length - 1; i >= 0; i--) {
-//         result += text[i];
-//     }
+     for (let i = text.length - 1; i >= 0; i--) {
+         result += text[i];
+     }
 
-//     return result;
-// }
+     return result;
+ }
 
-// function stringReverse(text) {
-//     let result = '';
+ function stringReverse(text) {
+     let result = '';
 
-//     for (let i = 0; i < text.length; i++) {
-//         result += text[text.length - i - 1];
-//     }
+     for (let i = 0; i < text.length; i++) {
+         result += text[text.length - i - 1];
+     }
 
-//     return result;
-// }
+     return result;
+ }*/
 
 function stringReverse(text) {
     if (typeof text !== 'string') {
