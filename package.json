@@ -4,6 +4,7 @@
     "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
     "main": "index.js",
     "scripts": {   
+        "valid-name": "node --watch ./task/valid-name.js",
         "codewar1": "node --watch ./codewar/codewar1.js",
         "funkcijosfor": "node --watch ./task/funkcijosfor.js",
         "13-method-string": "node --watch ./js/13-method-string.js",

@@ -433,3 +433,25 @@ for (let i = 1; i <= 5; i++) {
 }
 
 
+// Susikurkite sąrašą 10 miestų, kuriame būtų įvardinami miesto pavadinimai ir jų 
+// atstumai iki Vilniaus ([‘Kaunas’, 89.6, ‘Klaipėda’, 307.3, … ).  
+// a. Parašykite funkciją, kuri pasakytų, kur toliausiai nuvažiuotume važiuodami x 
+// km/h greičiu per y valandų 
+// b. Parašykite funkciją, kuri pasakytų, ar spėtume pasiekti norimą miestą per x 
+// valandų ir kokiu greičiu turėtume važiuoti? (padarykite limitą 120 km/h) 
+// c. Parašykite funkciją, kuri nurodytų į kokį tolimiausią miestą mes galėtume 
+// nuvažiuoti su k kiekiu pinigų, jei už vieną litrą degalų turime mokėti j eurų. 
+// Kelionę pradedame su 30 litrų benzino bakelyje, už kuriuos mokėti nereikia. 
+// Nuvažiuodami vieną kilometrą sudeginame x kiekį degalų 
+// d. Susikurkite sąrašą kelio sąlygoms iki kiekvieno miesto apibūdinti (pavyzdžiui: 
+// geras, prastas, taisomas). Geromis kelio sąlygomis iki miesto važiuojame 
+// paprastai, prastomis kelio sąlygomis iki miesto važiuojame 1.5 karto ilgiau, o 
+// taisomo kelio sąlygomis važiuojame 2 kartus ilgiau. Parašykite funkciją, kuri 
+// pagal kelio sąlygas ir duotus atstumus, parašytų kiek laiko tektų važiuoti iki 
+// kiekvieno miesto
+
+const miestai = ['Kaunas', 89.6,'Klaipėda', 307.3,'Šiauliai', 214.1,'Panevėžys', 120.6, 'Alytus', 66.0, 'Marijampolė', 161.8, 'Jonava', 97.9,'Jonava', 97.9, 'Tauragė', 254.5, 'Utena', 124.5, 'Kėdainiai', 137.4];
+
+for (let i = 0; i < mietsas.length; i +=2){
+    const city = 0;
+}
