@@ -616,3 +616,22 @@ console.log('---------------')
 // c. Skaičius yra nulis, išveda į console ‘esu nulis’ 
 // d. Skaičius yra didesnis už 100, išveda ‘didžiulis skaičius’ 
 // e. Jei skaičius nėra didesnis už 100, išveda ‘esu mažiukas
+
+function skaiciausV(a){
+    if(a === 0){
+        return 'skaicius yra 0'
+    }else if(a > 100){
+        return 'didziulis skaicius'
+    } 
+    else if (a > 0){
+        return 'skaicius teigemas'
+    }else if(a < 0)
+        return `skaicius neigemas`
+}
+
+
+console.log(skaiciausV(2))
+console.log(skaiciausV(-2))
+console.log(skaiciausV(0))
+console.log(skaiciausV(11000))
+console.log(skaiciausV(99))
