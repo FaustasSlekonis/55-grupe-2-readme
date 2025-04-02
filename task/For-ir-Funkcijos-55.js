@@ -321,36 +321,295 @@ function dalyba(a, b) {
 console.log(dalyba(4, 5)); 
 console.log('---------------')
 
-// 5. Parašykite funkciją, kuri grąžina dviejų skaičių vidurkį. 
+// 5. Parašykite funkciją, kuri grąžina dviejų skaičių vidurkį.
+
+function vidurkis(a, b){
+    return (a + b) / 2;
+}
+console.log(vidurkis(2, 10))
+console.log('---------------')
 // 6. Parašykite funkciją, kuri patikrina, ar skaičius yra teigiamas. 
+function teigemas(a){
+    return a > 0;
+}
+console.log(teigemas(2))
+console.log(teigemas(-2))
+console.log(teigemas(0))
+console.log('---------------')
 // 7. Parašykite funkciją, kuri patikrina, ar skaičius yra lyginis. 
+function lyginis(a){
+    return a % 2 == 0;
+}
+console.log(lyginis(2))
+console.log(lyginis(1))
+
+
+console.log('---------------')
 // 8. Parašykite funkciją, kuri patikrina, ar skaičius yra nelyginis. 
+function nelyginis(a){
+    return a % 2 == 1;
+}
+console.log(nelyginis(2))
+console.log(nelyginis(1))
+console.log('---------------')
 // 9. Parašykite funkciją, kuri patikrina, ar skaičius dalijasi iš 5 be liekanos. 
-// 10. Parašykite funkciją, kuri patikrina, ar skaičius yra lygus 100. 
+function dalijasi5(a){
+    return a % 5 == 0;
+}
+console.log(nelyginis(15))
+console.log(nelyginis(12))
+console.log('---------------')
+// 10. Parašykite funkciją, kuri patikrina, ar skaičius yra lygus 100.
+function ar100(a){
+    return a === 100;
+} 
+console.log(ar100(100))
+console.log(ar100(101))
+console.log('---------------')
 // 11. Parašykite funkciją, kuri patikrina, ar skaičius yra didesnis nei 10. 
+function ar10(a){
+    return a <= 10;
+} 
+console.log(ar10(11))
+console.log(ar10(10))
+console.log('---------------')
 // 12. Parašykite funkciją, kuri grąžina didesnį iš dviejų skaičių. 
+function didesnis(a,b){
+    if(a > b){
+        return a;
+    }else {
+        return b;
+    }
+
+    }
+
+console.log(didesnis(12, 13))
+console.log(didesnis(12, 2))
+console.log(didesnis(12, 28))
+console.log('---------------')
+
 // 13. Parašykite funkciją, kuri grąžina mažesnį iš dviejų skaičių. 
+function mazesnis(a,b){
+    if (a < b){
+        return a;
+    }else {
+        return b;
+    }
+}
+console.log(mazesnis(12,6))
+console.log(mazesnis(22,15))
+console.log('---------------')
+
 // 14. Parašykite funkciją, kuri patikrina, ar trys skaičiai yra vienodi. 
+function vienodi(a,b,c){
+    if(a === b && b == c){
+        return 'vienodi'
+    } else{
+        return 'nevienodi'
+    }
+}
+console.log(vienodi(1,1,1))
+console.log(vienodi(1,1,2))
+console.log(vienodi(1,2,1))
+console.log(vienodi(2,1,1))
+console.log('---------------')
+
 // 15. Parašykite funkciją, kuri patikrina, ar du skaičiai yra lygūs. 
+function lygus(a, b){
+    if (a == b){
+        return 'lygus'
+    }else {
+        return 'nelygus'
+    }
+}
+console.log(lygus(2,2))
+console.log('---------------')
+
 // 16. Parašykite funkciją, kuri patikrina, ar skaičius yra tarp 1 ir 10. 
+function tarp(a){
+    if(a >= 1 && a <=10){
+        return `${a}yra tarp 1 ir 10 intervale`
+    }else{
+        return `${a}nera tarp 1 ir 10 intervale`
+    }
+}
+console.log(tarp(10))
+console.log(tarp(11))
+console.log(tarp(-1))
+console.log('---------------')
+
+
 // 17. Parašykite funkciją, kuri patikrina, ar skaičius yra tarp 50 ir 100. 
+function tarp50(a){
+    if (a >= 50 && a <=100){
+        return `${a} yra intervale`
+    } else {
+        return `${a} nera intervale`
+    }
+}
+console.log(tarp50(66))
+console.log(tarp50(101))
+console.log(tarp50(49))
+console.log('---------------')
+
 // 18. Parašykite funkciją, kuri patikrina, ar skaičius yra neigiamas. 
+function neigemas(a){
+    if(a < 0){
+        return `${a} skaicius neigemas`
+    } else{
+        return `${a} skaicius teigemas`
+    }
+}
+console.log(neigemas(-1))
+console.log(neigemas(1))
+console.log('---------------')
 // 19. Parašykite funkciją, kuri grąžina „Teigiamas“ arba „Neigiamas“ priklausomai nuo 
 // skaičiaus, kurį nusiunčiate funkcijai. 
+function neigemas(a){
+    if(a > 0){
+        return `${a} skaicius Teigemas`
+    } else{
+        return `${a} skaicius Neigemas`
+    }
+}
+console.log(neigemas(-1))
+console.log(neigemas(1))
+
+console.log('---------------')
+
+
 // 20. Parašykite funkciją, kuri patikrina, ar skaičius yra didesnis nei 18 (pvz., patikrinimas, 
 // ar žmogus pilnametis). 
+function pilnametis(a){
+    if(a > 18){
+        return `${a}zmogus pilnametis`
+    } else {
+        return 'nepilnametis'
+    }
+}
+console.log(pilnametis(19))
+console.log(pilnametis(18))
+
+
+console.log('---------------')
+
+
 // 21. Parašykite funkciją, kuri patikrina, ar perduotas žodis yra „labas“. 
-// 22. Parašykite funkciją, kuri patikrina, ar žodis yra ilgesnis nei 5 simboliai. 
+function labas(a){
+    if(a == 'labas'){
+        return 'perduotas zodis yra labas'
+    }else{
+        return 'ne labas'
+    }
+
+    
+}
+
+console.log(labas('labas'))
+console.log(labas('laba'))
+console.log('---------------')
+// 22. Parašykite funkciją, kuri patikrina, ar žodis yra ilgesnis nei 5 simboliai.
+function ilgesnis5(a){
+    if(a.length > 5){
+        return "ilgesnis nei 5"
+    }else{
+        return 'trumpesnis nei 5'
+    }
+} 
+console.log(ilgesnis5('labas as krabas'))
+console.log(ilgesnis5('lab'))
+console.log('---------------')
 // 23. Parašykite funkciją, kuri grąžina pirmąją perduoto žodžio raidę. 
+function pirmaR(a){
+    return a[0]
+}
+console.log(pirmaR('Labas'))
+console.log('---------------')
+
 // 24. Parašykite funkciją, kuri grąžina paskutinę perduoto žodžio raidę. 
+
+
+function paskutine(a){
+    return a[4]
+}
+console.log(paskutine('Labas'))
+
+
+
+console.log('------arba---------')
+
+function paskutine(a) {
+    return a[a.length - 1];  
+}
+
+console.log(paskutine('Labas'));
+
+console.log('---------------')
+
+
 // 25. Parašykite funkciją, kuri patikrina, ar žodis prasideda raide „A“. 
+function prasidedaA(a){
+    if(a[0] === `A`){
+        return `Prasideda A`
+    } else {
+        return `neprasideda A`
+    }
+}
+console.log(prasidedaA('Ananasas'))
+console.log(prasidedaA('bananas'))
+
+console.log('---------------')
+
 // 26. Parašykite funkciją, kuri grąžina žodžio ilgį. 
+function ilgisZ(a){
+    return a.length
+}
+console.log(ilgisZ('labas'))
+console.log(ilgisZ('pasikiskekopusteleudamasis'))
+console.log(ilgisZ('1234'))
+console.log('---------------')
 // 27. Parašykite funkciją, kuri grąžina „Ilgas“ arba „Trumpas“, priklausomai nuo žodžio 
 // ilgio. Ilgas žodis yra 7 simbolių ilgio arba didesnis, o trumpas yra 6 simbolių ilgio arba 
 // trumpesnis 
+function zodzioIlgis(a){
+    if(a.length >= 6){
+        return 'ilgas zodis'
+    }else{
+        return 'trumpas'
+    }
+}
+console.log(zodzioIlgis('labas as krabas'))
+console.log(zodzioIlgis('pran'))
+
+console.log('---------------')
+
 // 28. Parašykite funkciją, kuri patikrina, ar du žodžiai yra vienodi. 
+function vienodiZo(a,b){
+    if(a === b){
+        return 'vienodi'
+    }else{
+        return 'nevienodi'
+    }
+}
+console.log(vienodiZo('labas','labas'))
+console.log(vienodiZo('labas','krabas'))
+console.log('---------------')
 // 29. Parašykite funkciją, kuri grąžina „Diena“ arba „Naktis“, priklausomai nuo perduotos 
 // valandos (0–23). 
+function zodzioIlgis(a){
+    if(a >= 7 && a <= 18){
+        return 'diena'
+    }else{
+        return 'naktis'
+    }
+}
+console.log(zodzioIlgis(23))
+console.log(zodzioIlgis(12))
+
+console.log('---------------')
+
+
+
 // 30. Parašykite vieną funkciją, kuri patikrina skaičiaus vertę, ir jęi: 
 // a. Skaičius yra teigiamas, išveda į console ‘esu teigiamas’ 
 // b. Skaičius yra neigiamas, išveda į console ‘esu neigiamas’ 
