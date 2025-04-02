@@ -191,11 +191,11 @@ for(let i = 0; i < sarasas.length; i++){
                 }
             }
         
-            // Gražiname didžiausią skaičių
+            
             return didziausias;
         }
         
-        // Testavimas
+
         console.log(didziausiasSkaiciusSarase([1])); 
         console.log(didziausiasSkaiciusSarase([1, 2, 3])); 
         console.log(didziausiasSkaiciusSarase([-5, 78, 14, 0, 18]));

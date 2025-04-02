@@ -455,3 +455,7 @@ const miestai = ['Kaunas', 89.6,'Klaipėda', 307.3,'Šiauliai', 214.1,'Panevėž
 for (let i = 0; i < mietsas.length; i +=2){
     const city = 0;
 }
+
+
+
+
