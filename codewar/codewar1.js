@@ -38,3 +38,14 @@ function correctText(text) {
     
     return correctedText;
 }
+
+console.clear();
+
+let raide = '';
+function reverseWords(str){
+    for (let i = str - 1; i >= 0; i--){
+    raide += str[i];
+  }
+  return raide;
+}
+  console.log(reverseWords('labas nelabas'))
