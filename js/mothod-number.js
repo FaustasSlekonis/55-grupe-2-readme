@@ -98,7 +98,7 @@ console.log(parseFloat('+5+5'));
 console.log(parseFloat('++55'));
 
 console.clear();
-
+// toFixed po kablelio pasirasai kiek nori skaitmenu - grazina `string`
 const a = 12.3456789;
 console.log(a);
 console.log(typeof a);
@@ -110,7 +110,7 @@ console.log('string');
 const b = a.toFixed(4);
 console.log(b);
 console.log(typeof b);
-
+//parseFloat grazina i number reiksme
 const c = parseFloat(b);
 console.log(c);
 console.log(typeof c);
