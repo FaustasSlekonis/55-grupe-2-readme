@@ -450,12 +450,33 @@ for (let i = 1; i <= 5; i++) {
 // pagal kelio sąlygas ir duotus atstumus, parašytų kiek laiko tektų važiuoti iki 
 // kiekvieno miesto
 
-const miestai = ['Kaunas', 89.6,'Klaipėda', 307.3,'Šiauliai', 214.1,'Panevėžys', 120.6, 'Alytus', 66.0, 'Marijampolė', 161.8, 'Jonava', 97.9,'Jonava', 97.9, 'Tauragė', 254.5, 'Utena', 124.5, 'Kėdainiai', 137.4];
+const miestaiV = ['Kaunas', 89.6,'Klaipėda', 307.3,'Šiauliai', 214.1,'Panevėžys', 120.6, 'Alytus', 66.0, 'Marijampolė', 161.8, 'Jonava', 97.9,'Jonava', 97.9, 'Tauragė', 254.5, 'Utena', 124.5, 'Kėdainiai', 137.4];
 
-for (let i = 0; i < mietsas.length; i +=2){
-    const city = 0;
+function kurToliausiai(miestas, greitis, laikas){
+    let maxAts = 0;
+    let kelias = greitis * laikas
+    for(let i = 0; i < miestas.length; i+=2){
+        console.log(miestaiV[i]);
+        if(miestaiV[i+1] <= kelias && miestaiV[i+1] > maxAts){
+            maxAts = miestaiV[i+1];
+            maxAts = i;
+        }
+    }
+    console.log(miestaiV[maxAts] + ' ' + miestaiV[maxAts+1]);
 }
+kurToliausiai(miestaiV, 80, 2)
 
 
-
-
+function arSpesim(miestai, miestas, laikas){
+    for(let i = 0; i <miestai.length; i+=2){
+        if(miestai[i] === miestas){
+            if (miestai[i+1]/laikas<= 120){
+                console.log('spesim' + miestai[i+1]/laikas)
+            }
+        }
+        else{
+            console.log('miesto neradau')
+        }
+    }
+}
+arSpesim(miestaiV, 'Panevėžys')
