@@ -111,3 +111,32 @@ function reverseWords(str){
   }
 
   console.log(whatday(8))
+
+
+
+
+  function arrayMadness(a, b) {
+
+    let sumSquaresA = 0;
+    let sumCubesB = 0;
+  
+
+    for (let i = 0; i < a.length; i++) {
+      sumSquaresA += a[i] ** 2;
+    }
+  
+
+    for (let i = 0; i < b.length; i++) {
+      sumCubesB += b[i] ** 3;
+    }
+  
+
+    if (sumSquaresA > sumCubesB) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+
+  console.log(arrayMadness([4,5,6],[1,2,3]), true);
