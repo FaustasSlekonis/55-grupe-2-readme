@@ -4,6 +4,8 @@
     "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
     "main": "index.js",
     "scripts": { 
+        "22-switch.js": "node --watch ./22-switch.js",
+        "21-destrukturizavimas-rest": "node --watch ./21-destrukturizavimas-rest.js",
         "19-short": "node --watch ./js/19-short.js",
         "18-for-in": "node --watch ./js/18-for-in.js",
         "15-ternary": "node --watch ./js/15-ternary.js",

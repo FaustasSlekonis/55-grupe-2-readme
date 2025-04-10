@@ -480,3 +480,30 @@ function arSpesim(miestai, miestas, laikas){
     }
 }
 arSpesim(miestaiV, 'Panevėžys')
+
+//1. užd. Padarykite funkciją, kuriai perdavus vieną iš (akmuo, popierius, šulinys) reikšmių, 
+//kompiuteris su jumi sužaistų vaskiči raundą ir išvestų rezultatą į console. Kompiuterio 
+//pasirinkimai turi būti atsitiktiniai. 
+
+function playGame(playerChoice) {
+    const options = ['akmuo', 'popierius', 'šulinys'];
+    const computerChoice = options[Math.floor(Math.random() * options.length)];
+
+    console.log(`Jūs pasirinkote: ${playerChoice}`);
+    console.log(`Kompiuteris pasirinko: ${computerChoice}`);
+
+    if (playerChoice === computerChoice) {
+        console.log('Lygiosios!');
+    } else if (
+        (playerChoice === 'akmuo' && computerChoice === 'šulinys') ||
+        (playerChoice === 'popierius' && computerChoice === 'akmuo') ||
+        (playerChoice === 'šulinys' && computerChoice === 'popierius')
+    ) {
+        console.log('Laimėjote!');
+    } else {
+        console.log('Pralaimėjote!');
+    }
+}
+
+
+playGame('akmuo')
