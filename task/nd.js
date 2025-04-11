@@ -507,3 +507,66 @@ function playGame(playerChoice) {
 
 
 playGame('akmuo')
+
+
+
+// 1. Parašykite funkciją, kuri išvestų skaičiaus faktorialą 
+function faktorialas(n) {
+    let fakt = 1;
+    for (let i = 1; i <= n; i++) {
+        fakt *= i;
+    }
+    console.log(n + "! = " + fakt);
+}
+
+
+console.log(faktorialas(5));
+
+
+
+
+
+// 2. Parašykite funkciją, kuri apskaičiuotų kiek kartų tam tikra raidė pasikartojo žodyje arba 
+// sakinyje 
+function raidėsKiekis(sakinys, raide) {
+    let skaicius = 0;
+
+    sakinys = sakinys.toLowerCase();
+    raide = raide.toLowerCase();
+
+
+    for (let i = 0; i < sakinys.length; i++) {
+        if (sakinys[i] === raide) {
+            skaicius++;
+        }
+    }
+
+    return skaicius;
+}
+
+
+let sakinys = "Kokia yra Tavo mėgstama raide?";
+let raide = "a";
+let rezultatas = raidėsKiekis(sakinys, raide);
+console.log(`Raidė '${raide}' pasikartoja ${rezultatas} kartus.`);
+
+
+
+
+
+
+// 3. Padarykite funkciją, kuri grąžintų visus skaičiaus 3 kartotinius nuo 1 iki 50 
+// 4. Parašykite funkciją, kuri patikrintų ar duotas žodis yra palindromas 
+// 5. Parašyk funkciją, kuri suskaičiuoja kiek balsių yra žodyje 
+// 6. Sukurk funkciją, kuri visus tarpus tekste pakeičia pabraukimais (underscore) 
+// 7. Sukurk funkciją, kuri padvigubina visus skaičius masyve 
+// 8. Sukurk funkciją, kuri suranda ilgiausią žodį sakinyje 
+// 9. Funkcija, kuri išrikiuoja žodžius pagal ilgį didėjančia tvarka 
+// 10. Funkcija, kuri grąžina pirmą skaičių masyve, kuris dalinasi iš 7 
+// 11. Funkcija, kuri priima masyvą vardų ir grąžina tik tuos, kurie prasideda „A“ raide 
+// 12. Funkcija, kuri turi sąraše rasti skaičių, kuris jame kartojasi daugiau nei vieną kartą 
+// 13. Sukurk funkciją, kuri grąžins visus duoto sąrašo skaičius, kurie yra tarp dviejų nurodytų 
+// reikšmių ([2, 5, 36, 8, 15, 6] masyvui nurodžius 5 20 intervalą, bus grąžinama [5, 8, 15, 
+// 6] ) 
+// 14. Parašykite funkciją, kuri iš žodžių sąrašo išrinktų ir grąžintų tik tuos žodžius, kuriuose 
+// yra raidė e 
