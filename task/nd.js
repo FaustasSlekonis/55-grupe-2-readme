@@ -556,8 +556,54 @@ console.log(`Raidė '${raide}' pasikartoja ${rezultatas} kartus.`);
 
 
 // 3. Padarykite funkciją, kuri grąžintų visus skaičiaus 3 kartotinius nuo 1 iki 50 
+function gauti3Kartotinius() {
+    let kartotiniai = [];
+    for (let i = 1; i <= 50; i++) {
+        if (i % 3 === 0) {
+            kartotiniai.push(i);
+        }
+    }
+    return kartotiniai;
+}
+
+
+console.log(gauti3Kartotinius());
 // 4. Parašykite funkciją, kuri patikrintų ar duotas žodis yra palindromas 
+function arPalindromas(zodis) {
+  
+    zodis = zodis.toLowerCase().replace(/\s/g, '');
+
+    let apverstas = zodis.split('').reverse().join('');
+
+ 
+    return zodis === apverstas;
+}
+
+
+console.log(arPalindromas("akava"));      
+console.log(arPalindromas("obuolys"));      
+console.log(arPalindromas("Savas"));        
+console.log(arPalindromas("Kėdė"));
+
+
 // 5. Parašyk funkciją, kuri suskaičiuoja kiek balsių yra žodyje 
+function skaiciuotiBalses(zodis) {
+    let balses = ['a', 'ą', 'e', 'ę', 'ė', 'i', 'y', 'o', 'u', 'ų', 'ū'];
+    let kiekis = 0;
+
+    zodis = zodis.toLowerCase();
+
+    for (let i = 0; i < zodis.length; i++) {
+        if (balses.includes(zodis[i])) {
+            kiekis++;
+        }
+    }
+
+    return kiekis;
+}
+
+
+console.log(skaiciuotiBalses("Pavasaris"));
 // 6. Sukurk funkciją, kuri visus tarpus tekste pakeičia pabraukimais (underscore) 
 // 7. Sukurk funkciją, kuri padvigubina visus skaičius masyve 
 // 8. Sukurk funkciją, kuri suranda ilgiausią žodį sakinyje 
