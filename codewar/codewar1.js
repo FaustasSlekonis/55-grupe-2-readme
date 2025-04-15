@@ -140,3 +140,32 @@ function reverseWords(str){
   
 
   console.log(arrayMadness([4,5,6],[1,2,3]), true);
+
+
+  function past(h, m, s) {
+    return (h * 3600 + m * 60 + s) * 1000;
+  }
+  
+  console.log(past(0, 1, 1), 61000);
+
+  function summation(num) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+      sum += i;
+    }
+    return sum;
+  }
+  
+  console.log(summation(8));
+
+
+
+  function maps(x) {
+    let result = [];
+    for (let i = 0; i < x.length; i++) {
+      result.push(x[i] * 2);
+    }
+    return result;
+  }
+  
+  console.log(maps([1, 2, 3]));
