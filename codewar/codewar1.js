@@ -169,3 +169,56 @@ function reverseWords(str){
   }
   
   console.log(maps([1, 2, 3]));
+
+
+
+  function boolToWord( bool ){
+    if (bool) {
+      return 'Yes';
+    } else {
+      return 'No';
+    }
+  }
+
+
+
+  function tripleTrouble(one, two, three){
+    let result = '';
+    
+    for (let i = 0; i < one.length; i++) {
+      result += (one[i] + two[i] + three[i]);
+    }
+    
+    return result;
+   }
+
+
+
+
+   function hero(bullets, dragons){
+    return bullets >= dragons * 2
+  }
+
+
+
+
+
+
+  function paperwork(n, m) {
+    if (n > 0 && m > 0) {
+        return n * m;
+    } else {
+        return 0;
+    }
+}
+
+
+
+
+function checkAlive (health) {
+  if (health > 0) {
+    return true
+  } else {
+    return false
+  }
+}
