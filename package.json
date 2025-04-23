@@ -4,6 +4,7 @@
     "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
     "main": "index.js",
     "scripts": { 
+        "new-zoo": "node --watch ./opp/new-zoo.js",
         "zoo": "node --watch ./opp/zoo.js",
         "22-switch.js": "node --watch ./22-switch.js",
         "21-destrukturizavimas-rest": "node --watch ./21-destrukturizavimas-rest.js",

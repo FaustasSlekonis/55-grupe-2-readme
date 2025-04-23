@@ -180,3 +180,6 @@ console.log("Dumbo energija:", dumbo.energy);
 skipper.triukas("hi");
 skipper.triukas("wow");
 skipper.happyBirthday();
+
+
+
