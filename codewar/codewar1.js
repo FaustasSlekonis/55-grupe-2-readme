@@ -240,3 +240,32 @@ console.log(myFirstKata(67,"bye"),false);
 console.log(myFirstKata(true,true),false);
 console.log(myFirstKata(314,107),(107 % 314 + 314 % 107));
 console.log(myFirstKata(19483,9),(9 % 19483 + 19483 % 9));
+
+
+function correctPolishLetters(str) {
+  return str
+    .replace(/ą/g, 'a')
+    .replace(/ć/g, 'c')
+    .replace(/ę/g, 'e')
+    .replace(/ł/g, 'l')
+    .replace(/ń/g, 'n')
+    .replace(/ó/g, 'o')
+    .replace(/ś/g, 's')
+    .replace(/ź/g, 'z')
+    .replace(/ż/g, 'z');
+}
+
+
+function strCount(str, letter) {
+  let count = 0;
+  for (let char of str) {
+    if (char === letter) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(strCount('Hello', 'o'), 1);
+console.log(strCount('Hello', 'l'), 2);
+console.log(strCount('',      'z'), 0);
