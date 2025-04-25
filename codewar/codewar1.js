@@ -269,3 +269,40 @@ function strCount(str, letter) {
 console.log(strCount('Hello', 'o'), 1);
 console.log(strCount('Hello', 'l'), 2);
 console.log(strCount('',      'z'), 0);
+
+
+
+function differenceInAges(ages) {
+  const youngest = Math.min(...ages);
+  const oldest = Math.max(...ages);
+  const difference = oldest - youngest;
+  return [youngest, oldest, difference];
+}
+
+
+console.log(differenceInAges([82, 15, 6, 38, 35]), [6, 82, 76]);
+console.log(differenceInAges([57, 99, 14, 32]), [14, 99, 85]);
+
+
+
+function getDrinkByProfession(param) {
+  const profession = param.toLowerCase();
+
+  if (profession === "jabroni") return "Patron Tequila";
+  else if (profession === "school counselor") return "Anything with Alcohol";
+  else if (profession === "programmer") return "Hipster Craft Beer";
+  else if (profession === "bike gang member") return "Moonshine";
+  else if (profession === "politician") return "Your tax dollars";
+  else if (profession === "rapper") return "Cristal";
+  else return "Beer";
+}
+
+
+console.log(getDrinkByProfession("jabrOni"), "Patron Tequila", "'Jabroni' should map to 'Patron Tequila'");
+console.log(getDrinkByProfession("scHOOl counselor"), "Anything with Alcohol", "'School Counselor' should map to 'Anything with alcohol'");
+console.log(getDrinkByProfession("prOgramMer"), "Hipster Craft Beer", "'Programmer' should map to 'Hipster Craft Beer'");
+console.log(getDrinkByProfession("bike ganG member"), "Moonshine", "'Bike Gang Member' should map to 'Moonshine'");
+console.log(getDrinkByProfession("poLiTiCian"), "Your tax dollars", "'Politician' should map to 'Your tax dollars'");
+console.log(getDrinkByProfession("rapper"), "Cristal", "'Rapper' should map to 'Cristal'");
+console.log(getDrinkByProfession("pundit"), "Beer", "'Pundit' should map to 'Beer'");
+console.log(getDrinkByProfession("Pug"), "Beer", "'Pug' should map to 'Beer'");
